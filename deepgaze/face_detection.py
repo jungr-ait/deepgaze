@@ -233,14 +233,14 @@ class HaarFaceDetector:
 
         @param inputImg the image where the cascade will be called
         """
-
+        
         #Cascade: frontal faces
         faces = self._frontalCascade.detectMultiScale(
             inputImg,
             scaleFactor=scaleFactor,
             minNeighbors=minNeighbors,
             minSize=(minSizeX, minSizeY),
-            flags=cv2.cv.CV_HAAR_SCALE_IMAGE
+            flags=cv2.CASCADE_SCALE_IMAGE
         )
 
         if(len(faces) == 0):
@@ -287,7 +287,7 @@ class HaarFaceDetector:
             scaleFactor=scaleFactor,
             minNeighbors=minNeighbors,
             minSize=(minSizeX, minSizeY),
-            flags=cv2.cv.CV_HAAR_SCALE_IMAGE
+            flags=cv2.CASCADE_SCALE_IMAGE
         )
 
         if(len(faces) == 0):
@@ -333,7 +333,7 @@ class HaarFaceDetector:
             scaleFactor=scaleFactor,
             minNeighbors=minNeighbors,
             minSize=(minSizeX, minSizeY),
-            flags=cv2.cv.CV_HAAR_SCALE_IMAGE
+            flags=cv2.CASCADE_SCALE_IMAGE
         )
 
         if (len(faces) == 0):
@@ -359,7 +359,7 @@ class HaarFaceDetector:
             scaleFactor=scaleFactor,
             minNeighbors=minNeighbors,
             minSize=(minSizeX, minSizeY),
-            flags=cv2.cv.CV_HAAR_SCALE_IMAGE
+            flags=cv2.CASCADE_SCALE_IMAGE
         )
 
         if (len(faces) == 0):
