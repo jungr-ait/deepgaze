@@ -30,3 +30,5 @@
 # Folders
 build/
 *~
+my_py_env
+.idea
